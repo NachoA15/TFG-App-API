@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(cors())
 
-app.use('/users', userRouter)
+app.use('/api/v1/users/', userRouter)
 
 const port = 5001
 
