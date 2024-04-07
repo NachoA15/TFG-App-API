@@ -58,7 +58,7 @@ class ServiceUser {
         const newLocation = {
             latitude: latitude,
             longitude: longitude,
-            timestamp: timestamp
+            timestamp: new Date(timestamp)
         };
         userLocations.push(newLocation);
         const res = await User.findByIdAndUpdate(userId,
